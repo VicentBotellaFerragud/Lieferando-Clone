@@ -45,9 +45,11 @@
             <div class="restaurant-picture">
 
                 <div class="restaurant-icon">
+
                     <span><b>PP</b></span>
                     <span><b>P</b>izza <b>P</b>alace</span>
                     <img src="img/pizza.png">
+
                 </div>
 
             </div>
@@ -103,8 +105,7 @@
 
             </div>
 
-            <div class="dish-container mb-1"
-                onclick="showBasket('Neapolitan Pizza'); addProductToBasket('Neapolitan Pizza', 12, 1)">
+            <div class="dish-container mb-1" onclick="showBasket('Neapolitan Pizza'); addProductToBasket('Neapolitan Pizza', 12, 1)">
                 
                 <h3>Neapolitan Pizza</h3>
                 <span>12,00 €</span>
@@ -117,8 +118,7 @@
 
             </div>
 
-            <div class="dish-container"
-                onclick="showBasket('New York-Style Pizza'); addProductToBasket('New York-Style Pizza', 14, 1)">
+            <div class="dish-container" onclick="showBasket('New York-Style Pizza'); addProductToBasket('New York-Style Pizza', 14, 1)">
                 
                 <h3>New York-Style Pizza</h3>
                 <span>14,00 €</span>
@@ -137,8 +137,7 @@
 
             </div>
 
-            <div class="dish-container mb-1"
-                onclick="showBasket('Artichoke Pizza'); addProductToBasket('Artichoke Pizza', 13, 1)">
+            <div class="dish-container mb-1" onclick="showBasket('Artichoke Pizza'); addProductToBasket('Artichoke Pizza', 13, 1)">
                 
                 <h3>Artichoke Pizza</h3>
                 <span>13,00 €</span>
@@ -151,8 +150,7 @@
 
             </div>
 
-            <div class="dish-container"
-                onclick="showBasket('Veggie Pizza'); addProductToBasket('Veggie Pizza', 11.5, 1)">
+            <div class="dish-container" onclick="showBasket('Veggie Pizza'); addProductToBasket('Veggie Pizza', 11.5, 1)">
                 
                 <h3>Veggie Pizza</h3>
                 <span>11,50 €</span>
@@ -171,8 +169,7 @@
 
             </div>
 
-            <div class="dish-container mb-1"
-                onclick="showBasket('American Pizza'); addProductToBasket('American Pizza', 15, 1)">
+            <div class="dish-container mb-1" onclick="showBasket('American Pizza'); addProductToBasket('American Pizza', 15, 1)">
                 
                 <h3>American Pizza</h3>
                 <span>15,00 €</span>
@@ -185,8 +182,7 @@
 
             </div>
 
-            <div class="dish-container"
-                onclick="showBasket('Cheese Bomb Pizza'); addProductToBasket('Cheese Bomb Pizza', 14.5, 1)">
+            <div class="dish-container" onclick="showBasket('Cheese Bomb Pizza'); addProductToBasket('Cheese Bomb Pizza', 14.5, 1)">
                 
                 <h3>Cheese Bomb Pizza</h3>
                 <span>14,50 €</span>
@@ -205,8 +201,7 @@
 
             </div>
 
-            <div class="dish-container mb-1"
-                onclick="showBasket('Caesar Salad'); addProductToBasket('Caesar Salad', 8, 1)">
+            <div class="dish-container mb-1" onclick="showBasket('Caesar Salad'); addProductToBasket('Caesar Salad', 8, 1)">
                 
                 <h3>Caesar Salad</h3>
                 <span>8,00 €</span>
@@ -238,8 +233,7 @@
 
             </div>
 
-            <div class="dish-container mb-1"
-                onclick="showBasket('Chicken Fingers'); addProductToBasket('Chicken Fingers', 9, 1)">
+            <div class="dish-container mb-1" onclick="showBasket('Chicken Fingers'); addProductToBasket('Chicken Fingers', 9, 1)">
                 
                 <h3>Chicken Fingers</h3>
                 <span>9,00 €</span>
@@ -252,8 +246,7 @@
 
             </div>
 
-            <div class="dish-container mb-1"
-                onclick="showBasket('Cheese Fingers'); addProductToBasket('Cheese Fingers', 7.5, 1)">
+            <div class="dish-container mb-1" onclick="showBasket('Cheese Fingers'); addProductToBasket('Cheese Fingers', 7.5, 1)">
                 
                 <h3>Cheese Fingers</h3>
                 <span>7,50 €</span>
@@ -271,7 +264,6 @@
         <div id="basket" class="basket">
 
             <h1>Basket</h1>
-
             <span id="basket-status-info" class="basket-status-info">Your basket is empty. Fill it with some products!</span>
             
             <div class="products-list">
@@ -292,11 +284,9 @@
                     <span id="total-amount-New York-Style Pizza"></span> X
                     <span>New York-Style Pizza</span>
                     <button onclick="addProductToBasket('New York-Style Pizza', 14, 1)" class="add-btn">+</button>
-                    <button onclick="removeProductFromBasketOnce('New York-Style Pizza')"
-                        class="remove-one-btn">-</button>
+                    <button onclick="removeProductFromBasketOnce('New York-Style Pizza')" class="remove-one-btn">-</button>
                     <span id="total-price-New York-Style Pizza"></span> €
-                    <button onclick="removeProductFromBasket('New York-Style Pizza')"
-                        class="remove-all-btn">REMOVE</button>
+                    <button onclick="removeProductFromBasket('New York-Style Pizza')" class="remove-all-btn">REMOVE</button>
 
                 </div>
 
@@ -340,8 +330,7 @@
                     <button onclick="addProductToBasket('Cheese Bomb Pizza', 14.5, 1)" class="add-btn">+</button>
                     <button onclick="removeProductFromBasketOnce('Cheese Bomb Pizza')" class="remove-one-btn">-</button>
                     <span id="total-price-Cheese Bomb Pizza"></span> €
-                    <button onclick="removeProductFromBasket('Cheese Bomb Pizza')"
-                        class="remove-all-btn">REMOVE</button>
+                    <button onclick="removeProductFromBasket('Cheese Bomb Pizza')" class="remove-all-btn">REMOVE</button>
 
                 </div>
 
@@ -395,10 +384,12 @@
 
                 <span>Total amount of products: <b><span id="total-amount">0</span></b></span>
                 <span>Total purchase: <b><span id="total-purchase">0</span> €</b></span>
-                <span id="delivery-costs-row">+ delivery costs(5 €) = <b><span
-                            id="total-purchase-plus-delivery-costs">5</span> €</b></span>
-                <span id="delivery-costs-info" class="delivery-costs-info">You need to place an order over 50 € to avoid
-                    paying delivery costs.</span>
+                <span id="delivery-costs-row">
+                    + delivery costs(5 €) = <b><span id="total-purchase-plus-delivery-costs">5</span> €</b>
+                </span>
+                <span id="delivery-costs-info" class="delivery-costs-info">
+                    You need to place an order over 50 € to avoid paying delivery costs.
+                </span>
                 <button class="checkout-btn" onclick="orderPlaced()">Checkout</button>
 
             </div>
@@ -406,7 +397,7 @@
         </div>
 
     </div>
-    
+
 </body>
 
 </html>
