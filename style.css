@@ -1,0 +1,349 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.f-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/*Header style*/
+
+header {
+    width: 100%;
+    height: 4.5rem;
+    background-color: #fb6100;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100%;
+    width: 10rem;
+}
+
+.address {
+    color: white;
+    font-weight: bold;
+}
+
+.address span {
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2.5px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10rem;
+}
+
+.nav-menu img {
+    cursor: pointer;
+}
+
+.flag {
+    width: 20%;
+    border-radius: 100%;
+    border: 2.5px solid white;
+}
+
+/*Web content style*/
+
+.web-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.restaurant-info {
+    width: 100%;
+}
+
+.restaurant-picture {
+    height: 15rem;
+    background-image: url('img/pizza-palace.jpg');
+    background-position: center;
+    position: relative;
+}
+
+.restaurant-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2.5px solid black;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightsalmon;
+}
+
+.restaurant-description {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+}
+
+.restaurant-description span:hover {
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.icons-left {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.icons-right {
+    padding: 10px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.dishes-menu {
+    background-color: #f8f5f2;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dishes-menu a {
+    text-decoration: none;
+    color: black;
+    transition: 225ms ease-in-out;
+    padding-right: 25px;
+}
+
+.dishes-menu a:hover {
+    color: #fb6100;
+    transition: 225ms ease-in-out;
+}
+
+.section-title {
+    margin-block: 1rem;
+    margin-inline: 2rem;
+    background-color: #f8f5f2;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+
+.section-title h3 {
+    margin: 0 !important;
+}
+
+.dish-container {
+    margin-inline: 2rem;
+    border: 1px solid black;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    position: relative;
+}
+
+.dish-container:hover {
+    cursor: pointer;
+    border: 1px solid lightskyblue;
+}
+
+.add-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .25rem;
+    border-left: 1px solid lightgrey;
+    border-bottom: 1px solid lightgray;
+}
+
+/*Basket style*/
+
+.basket {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 450px;
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, 0.7);
+    padding-inline: 1rem;
+    text-align: center;
+}
+
+.basket h1 {
+    margin-block: 1rem;
+}
+
+.products-list div {
+    margin-bottom: 1rem;
+}
+
+.basket-status-info {
+    font-size: 15px;
+}
+
+.add-btn {
+    color: white;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.add-btn:hover {
+    filter: brightness(125%);
+}
+
+.remove-one-btn {
+    color: white;
+    background-color: lightcoral;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.remove-one-btn:hover {
+    filter: brightness(125%);
+}
+
+.remove-all-btn {
+    color: white;
+    background-color: lightslategray;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: .25rem;
+}
+
+.remove-all-btn:hover {
+    filter: brightness(125%);
+}
+
+.total-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-costs-info {
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 1rem;
+}
+
+.checkout-btn {
+    margin-top: 1rem;
+    padding: .5rem;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2.5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    filter: brightness(150%);
+}
+
+/*For smartphones*/
+
+@media (max-width: 1250px) {
+    .basket {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .display-mobile {
+        display: flex !important;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 99;
+        height: 5rem;
+    }
+
+    .address {
+        display: none;
+    }
+
+    .nav-menu {
+        width: fit-content !important;
+    }
+
+    .flag {
+        display: none;
+    }
+
+    .restaurant-description {
+        padding-block: 2.5rem !important;
+    }
+
+    .dishes-menu {
+        display: none;
+    }
+
+    .basket {
+        background-color: #fb6100;
+        color: white;
+        position: fixed;
+        top: 4.5rem;
+        padding: 0 !important;
+        width: 100% !important;
+        font-size: 12px !important;
+    }
+
+    .checkout-btn {
+        margin-bottom: 1rem;
+        width: 50% !important;
+    }
+}
