@@ -1,3 +1,5 @@
+/* Global style */
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +26,7 @@ body {
     display: none !important;
 }
 
-/*Header style*/
+/* Header style */
 
 header {
     width: 100%;
@@ -80,7 +82,7 @@ header {
     border: 2.5px solid white;
 }
 
-/*Web content style*/
+/* Web content style */
 
 .web-container {
     display: flex;
@@ -199,7 +201,7 @@ header {
     border-bottom: 1px solid lightgray;
 }
 
-/*Basket style*/
+/* Basket style */
 
 .basket {
     position: sticky;
@@ -292,7 +294,7 @@ header {
     filter: brightness(150%);
 }
 
-/*For smartphones*/
+/* For smartphones */
 
 @media (max-width: 1250px) {
     .basket {

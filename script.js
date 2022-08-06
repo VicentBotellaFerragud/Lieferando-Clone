@@ -1,3 +1,4 @@
+//Global variables:
 let basketProducts = [];
 let basketPrices = [];
 let basketAmounts = [];
